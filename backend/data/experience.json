@@ -1,0 +1,15 @@
+[
+  {
+    "role": "Power Platform Intern",
+    "company": "Enterprise Tech Solutions",
+    "location": "Pune, India",
+    "period": "Jan 2024 - Present",
+    "highlights": [
+      "Develop and deploy enterprise-level PowerApps and Power Automate flows to automate manual workflows.",
+      "Integrate SharePoint lists and databases for efficient information storage and management.",
+      "Build custom modern web dashboards using React and Tailwind CSS, integrating with Node.js and Django backends.",
+      "Incorporate AI-based solutions, including document question-answering pipelines using local Ollama and RAG models.",
+      "Create interactive reports and business intelligence dashboards using Power BI to visualize key performance indicators."
+    ]
+  }
+]

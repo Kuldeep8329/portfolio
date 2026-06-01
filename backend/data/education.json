@@ -1,0 +1,16 @@
+[
+  {
+    "degree": "Master of Computer Applications (MCA)",
+    "institution": "Pune University / Affiliated College",
+    "location": "Pune, India",
+    "period": "2022 - 2024",
+    "details": "Specialized in Web Application Development, Database Systems, Software Engineering, and AI/ML technologies."
+  },
+  {
+    "degree": "Bachelor of Computer Applications (BCA)",
+    "institution": "Pune University / Affiliated College",
+    "location": "Pune, India",
+    "period": "2019 - 2022",
+    "details": "Graduated with honors. Developed strong fundamentals in Programming (C, C++, Java, Python), Web Design, and Database Management."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Languages",
+    "items": ["Python", "JavaScript", "HTML", "CSS", "SQL"]
+  },
+  {
+    "category": "Web Development",
+    "items": ["React", "Node.js", "Express.js", "Django", "Bootstrap", "Tailwind CSS"]
+  },
+  {
+    "category": "Microsoft Power Platform",
+    "items": ["PowerApps", "Power BI", "Power Automate", "SharePoint", "MS-365 Tools"]
+  },
+  {
+    "category": "Database Management",
+    "items": ["MongoDB", "PostgreSQL", "MySQL", "SharePoint Lists"]
+  },
+  {
+    "category": "AI & Advanced Tech",
+    "items": ["Generative AI", "Ollama", "Retrieval-Augmented Generation (RAG)", "Machine Learning (ML)"]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Best Application Developer Certificate",
+    "issuer": "Computer Society of India (CSI)",
+    "date": "2023",
+    "description": "Certified as Best Application Developer during the CSI annual convention/competition."
+  },
+  {
+    "name": "Microsoft Power Platform Certified App Maker",
+    "issuer": "Microsoft",
+    "date": "2024",
+    "description": "Validation of skills in creating custom canvas and model-driven business applications with Microsoft PowerApps, Power Automate, and SharePoint integrations."
+  },
+  {
+    "name": "Python & Data Science Professional",
+    "issuer": "Udemy / Online Professional Certification",
+    "date": "2023",
+    "description": "Comprehensive course covering advanced Python programming, data structures, and machine learning foundations."
+  }
+]
