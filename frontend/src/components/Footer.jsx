@@ -1,5 +1,4 @@
-import React from 'react';
-import { Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 
 const GithubIcon = ({ size = 16, className = '' }) => (
   <svg 
@@ -51,9 +50,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Brand details */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
-          <span className="text-xl font-bold tracking-tight text-white">
-            KULDEEP<span className="text-primary font-extrabold font-mono">.</span>
-          </span>
+          <div className="flex items-center gap-2 text-xl font-bold tracking-tight text-white">
+            <img src="/logo.png" alt="Logo" className="w-6 h-6 object-contain rounded-md" />
+            <span>
+              KULDEEP<span className="text-primary font-extrabold font-mono">.</span>
+            </span>
+          </div>
           <p className="text-xs text-gray-500 max-w-xs font-light">
             Power Platform Intern & Full-Stack Developer. Automating enterprise workflows and engineering high-end UI dashboards.
           </p>
@@ -72,7 +74,7 @@ const Footer = () => {
               <GithubIcon size={16} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/kuldeep-mahajan-830325250/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-2.5 rounded-full bg-white/5 border border-white/5 text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/10 transition-all text-xs"

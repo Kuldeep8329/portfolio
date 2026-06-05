@@ -2,22 +2,42 @@
   {
     "title": "Local RAG Document Assistant",
     "description": "An AI-powered document search and question-answering assistant. Built using React for the frontend and a Node.js backend integration with Ollama. Implements Retrieval-Augmented Generation (RAG) to query local text documents privately and securely without external API dependency.",
-    "tech": ["React", "Node.js", "Ollama", "RAG", "Tailwind CSS"],
+    "tech": [
+      "React",
+      "Node.js",
+      "Ollama",
+      "RAG",
+      "Tailwind CSS"
+    ],
     "link": "#",
-    "github": "#"
+    "github": "#",
+    "id": 1
   },
   {
     "title": "Enterprise Workflow Automation System",
     "description": "Designed and deployed a suite of Power Platform applications, including custom canvas PowerApps and automated flows via Power Automate. Built automated email notifications and approvals mapped to a SharePoint database and visual analytics via Power BI dashboards.",
-    "tech": ["PowerApps", "Power Automate", "Power BI", "SharePoint"],
+    "tech": [
+      "PowerApps",
+      "Power Automate",
+      "Power BI",
+      "SharePoint"
+    ],
     "link": "#",
-    "github": "#"
+    "github": "#",
+    "id": 2
   },
   {
     "title": "Interactive Client Portal",
     "description": "A full-stack, responsive web application for client management and analytics. Features a premium glassmorphism dashboard in React on the frontend and an Express/Node.js API for backend data routing and authentication.",
-    "tech": ["React", "Express.js", "Node.js", "MongoDB", "Framer Motion"],
+    "tech": [
+      "React",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Framer Motion"
+    ],
     "link": "#",
-    "github": "#"
+    "github": "#",
+    "id": 3
   }
 ]

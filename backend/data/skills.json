@@ -1,22 +1,56 @@
 [
   {
     "category": "Languages",
-    "items": ["Python", "JavaScript", "HTML", "CSS", "SQL"]
+    "items": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "id": 1
   },
   {
     "category": "Web Development",
-    "items": ["React", "Node.js", "Express.js", "Django", "Bootstrap", "Tailwind CSS"]
+    "items": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Django",
+      "Bootstrap",
+      "Tailwind CSS"
+    ],
+    "id": 2
   },
   {
     "category": "Microsoft Power Platform",
-    "items": ["PowerApps", "Power BI", "Power Automate", "SharePoint", "MS-365 Tools"]
+    "items": [
+      "PowerApps",
+      "Power BI",
+      "Power Automate",
+      "SharePoint",
+      "MS-365 Tools"
+    ],
+    "id": 3
   },
   {
     "category": "Database Management",
-    "items": ["MongoDB", "PostgreSQL", "MySQL", "SharePoint Lists"]
+    "items": [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "SharePoint Lists"
+    ],
+    "id": 4
   },
   {
     "category": "AI & Advanced Tech",
-    "items": ["Generative AI", "Ollama", "Retrieval-Augmented Generation (RAG)", "Machine Learning (ML)"]
+    "items": [
+      "Generative AI",
+      "Ollama",
+      "Retrieval-Augmented Generation (RAG)",
+      "Machine Learning (ML)"
+    ],
+    "id": 5
   }
 ]

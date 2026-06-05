@@ -1,17 +1,20 @@
 [
   {
-    "title": "Best Application Developer",
+    "id": 1,
+    "title": "third Rank in project development",
     "organization": "Computer Society of India (CSI)",
-    "date": "2023",
+    "date": "2025",
     "description": "Recognized for designing and building an outstanding, high-performance web application, displaying advanced capabilities in full-stack architecture and frontend styling."
   },
   {
+    "id": 2,
     "title": "1st Prize - State-Level Project Competition",
     "organization": "Inter-Collegiate TechFest",
     "date": "2023",
     "description": "Won first prize for presenting an AI-based automated solution utilizing local Large Language Models (LLM) and RAG for automated workspace assistance."
   },
   {
+    "id": 3,
     "title": "Special Recognition for Digital Innovation",
     "organization": "Academic Department Excellence Award",
     "date": "2022",
