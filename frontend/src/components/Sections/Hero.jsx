@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText, Send, Sparkles } from 'lucide-react';
+import { ArrowRight, Send, Sparkles } from 'lucide-react';
 
 const Hero = ({ profile }) => {
-  const { name = 'Kuldeep Mahajan', role = 'Power Platform Intern', summary = '' } = profile || {};
+  const { name = 'Kuldeep Mahajan', role = 'Power Platform Intern' } = profile || {};
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);

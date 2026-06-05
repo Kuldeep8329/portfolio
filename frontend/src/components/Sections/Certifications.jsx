@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, ShieldCheck, ExternalLink } from 'lucide-react';
+import { ShieldCheck, ExternalLink } from 'lucide-react';
 import TiltCard from '../TiltCard';
 
 const Certifications = ({ certifications }) => {

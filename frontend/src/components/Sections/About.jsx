@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Globe, Award, GraduationCap, Briefcase } from 'lucide-react';
+import { MapPin, Globe, GraduationCap, Briefcase } from 'lucide-react';
 import TiltCard from '../TiltCard';
 
 const About = ({ profile }) => {

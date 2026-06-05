@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
@@ -29,7 +29,6 @@ const Navbar = () => {
 
   // Scroll spy implementation
   useEffect(() => {
-    const observers = [];
     
     const observerCallback = (entries) => {
       entries.forEach((entry) => {

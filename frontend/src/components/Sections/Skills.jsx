@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import TiltCard from '../TiltCard';
 import { CheckCircle } from 'lucide-react';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Trophy, Calendar } from 'lucide-react';
 import TiltCard from '../TiltCard';
