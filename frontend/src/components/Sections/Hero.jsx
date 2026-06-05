@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText, Send, Sparkles } from 'lucide-react';
+import { ArrowRight, Send, Sparkles } from 'lucide-react';
 
 const Hero = ({ profile }) => {
-  const { name = 'Kuldeep Mahajan', role = 'Power Platform Intern', summary = '' } = profile || {};
+  const { name = 'Kuldeep Mahajan', role = 'Power Platform Intern' } = profile || {};
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -104,47 +103,75 @@ const Hero = ({ profile }) => {
             <div className="absolute inset-0 rounded-full border border-primary/20 animate-[spin_12s_linear_infinite] glow-primary" />
             <div className="absolute inset-4 rounded-full border border-dashed border-secondary/20 animate-[spin_8s_linear_infinite_reverse] glow-secondary" />
 
-            {/* Glass Box Terminal Mockup */}
-            <div className="absolute inset-12 glass-panel rounded-2xl border border-white/10 p-5 flex flex-col justify-between font-mono text-xs text-cyan-300 shadow-2xl">
-              <div className="flex justify-between items-center pb-2 border-b border-white/5">
-                <div className="flex space-x-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+            {/* 3D Flip Card */}
+            <div className="absolute inset-10 flip-card z-10">
+              <div className="flip-card-inner">
+                
+                {/* Front: Profile Photo */}
+                <div className="flip-card-front">
+                  <div className="w-full h-full rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-primary to-secondary shadow-2xl relative">
+                    <img 
+                      src="/kuldeep.jpg" 
+                      alt="Kuldeep Mahajan" 
+                      className="w-full h-full object-cover rounded-xl border border-[#030014]" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#030014]/65 via-transparent to-transparent flex items-end p-4 rounded-xl">
+                      <div className="text-left">
+                        <h4 className="text-sm font-extrabold text-white leading-none">{name}</h4>
+                        <span className="text-[10px] uppercase tracking-widest text-primary font-extrabold mt-1.5 block">Full-Stack & Power Platform</span>
+                        <span className="text-[9px] text-gray-400 font-light mt-1 block">Hover to see code &rarr;</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <span className="text-[10px] text-gray-500">developer.json</span>
-              </div>
-              
-              <div className="flex-1 py-4 space-y-2 overflow-hidden text-[11px] sm:text-xs">
-                <div>
-                  <span className="text-purple-400">const</span> developer = &#123;
-                </div>
-                <div className="pl-4">
-                  name: <span className="text-yellow-300">"{name.split(' ')[0]}"</span>,
-                </div>
-                <div className="pl-4">
-                  role: <span className="text-yellow-300">"Intern"</span>,
-                </div>
-                <div className="pl-4">
-                  skills: [<span className="text-yellow-300">"React"</span>, <span className="text-yellow-300">"Node"</span>, <span className="text-yellow-300">"AI"</span>],
-                </div>
-                <div className="pl-4">
-                  focus: <span className="text-yellow-300">"Automation"</span>,
-                </div>
-                <div className="pl-4">
-                  motto: <span className="text-yellow-300">"Solve & Automate"</span>
-                </div>
-                <div>&#125;;</div>
-                <div className="text-green-400 mt-2">
-                  &gt; developer.status()
-                </div>
-                <div className="text-gray-400">
-                  "Ready to engineer next-gen products."
-                </div>
-              </div>
 
-              <div className="text-[10px] text-gray-500 text-right pt-2 border-t border-white/5">
-                Active Code Sandbox
+                {/* Back: Code Terminal */}
+                <div className="flip-card-back">
+                  <div className="w-full h-full glass-panel rounded-2xl border border-white/10 p-5 flex flex-col justify-between font-mono text-xs text-cyan-300 shadow-2xl text-left">
+                    <div className="flex justify-between items-center pb-2 border-b border-white/5">
+                      <div className="flex space-x-1.5">
+                        <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
+                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
+                        <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+                      </div>
+                      <span className="text-[10px] text-gray-500">developer.json</span>
+                    </div>
+                    
+                    <div className="flex-1 py-4 space-y-2 overflow-hidden text-[11px] sm:text-xs">
+                      <div>
+                        <span className="text-purple-400">const</span> developer = &#123;
+                      </div>
+                      <div className="pl-4">
+                        name: <span className="text-yellow-300">"{name.split(' ')[0]}"</span>,
+                      </div>
+                      <div className="pl-4">
+                        role: <span className="text-yellow-300">"Intern"</span>,
+                      </div>
+                      <div className="pl-4">
+                        skills: [<span className="text-yellow-300">"React"</span>, <span className="text-yellow-300">"Node"</span>, <span className="text-yellow-300">"AI"</span>],
+                      </div>
+                      <div className="pl-4">
+                        focus: <span className="text-yellow-300">"Automation"</span>,
+                      </div>
+                      <div className="pl-4">
+                        motto: <span className="text-yellow-300">"Solve & Automate"</span>
+                      </div>
+                      <div>&#125;;</div>
+                      <div className="text-green-400 mt-2">
+                        &gt; developer.status()
+                      </div>
+                      <div className="text-gray-400">
+                        "Ready to engineer next-gen products."
+                      </div>
+                    </div>
+
+                    <div className="text-[10px] text-gray-500 text-right pt-2 border-t border-white/5 flex justify-between items-center">
+                      <span className="text-primary font-bold animate-pulse">Live Sandbox</span>
+                      <span>Hover off to see photo</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 

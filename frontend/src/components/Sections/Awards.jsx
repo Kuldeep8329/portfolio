@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Trophy, Calendar } from 'lucide-react';
 import TiltCard from '../TiltCard';
@@ -45,7 +44,7 @@ const Awards = ({ awards }) => {
   };
 
   return (
-    <section id="awards" className="py-24 px-6 relative z-10">
+    <section id="awards" className="py-12 px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="text-center mb-16">

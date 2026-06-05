@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import TiltCard from '../TiltCard';
 import { CheckCircle } from 'lucide-react';
@@ -47,7 +46,7 @@ const Skills = ({ skills }) => {
   };
 
   return (
-    <section id="skills" className="py-24 px-6 relative z-10">
+    <section id="skills" className="py-12 px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="text-center mb-16">

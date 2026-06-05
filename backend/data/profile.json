@@ -2,8 +2,12 @@
   "name": "Kuldeep Mahajan",
   "role": "Power Platform Intern & Full-Stack Developer",
   "location": "Pune, India 411057",
-  "email": "kuldeepmahajan.dev@gmail.com",
-  "phone": "+91 98765 43210",
+  "email": "kuldeepmahajan628@gmail.com",
+  "phone": "+91 8329300932",
   "summary": "Highly motivated and results-driven Power Platform Intern and Full-Stack Developer with expertise in Python, Django, React, Node.js, and Microsoft 365 solutions. Passionate about AI automation, collaboration, and solving complex business problems. Experienced in building responsive web applications, backend handling, Power Platform development, and building localized AI-based products using Ollama and Retrieval-Augmented Generation (RAG).",
-  "languages": ["English", "Hindi", "Marathi"]
+  "languages": [
+    "English",
+    "Hindi",
+    "Marathi"
+  ]
 }

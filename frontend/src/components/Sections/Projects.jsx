@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import TiltCard from '../TiltCard';
@@ -63,7 +62,7 @@ const Projects = ({ projects }) => {
   };
 
   return (
-    <section id="projects" className="py-24 px-6 relative z-10">
+    <section id="projects" className="py-12 px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="text-center mb-16">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
@@ -29,7 +29,6 @@ const Navbar = () => {
 
   // Scroll spy implementation
   useEffect(() => {
-    const observers = [];
     
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
@@ -86,9 +85,12 @@ const Navbar = () => {
         <a 
           href="#home" 
           onClick={(e) => handleNavClick(e, 'home')}
-          className="text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-all"
+          className="flex items-center gap-2.5 text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-all"
         >
-          KULDEEP<span className="text-primary font-extrabold font-mono">.</span>
+          <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain rounded-lg" />
+          <span>
+            KULDEEP<span className="text-primary font-extrabold font-mono">.</span>
+          </span>
         </a>
 
         {/* Desktop Navigation */}
