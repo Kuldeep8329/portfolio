@@ -31,7 +31,8 @@ const ddlQueries = [
     email VARCHAR(255) NOT NULL,
     phone VARCHAR(50),
     summary TEXT,
-    languages TEXT[]
+    languages TEXT[],
+    resume_link TEXT
   )`,
   
   // Skills

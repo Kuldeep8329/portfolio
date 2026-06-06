@@ -3,15 +3,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark-bg: #030014;
-  --color-dark-card: rgba(255, 255, 255, 0.03);
-  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-dark-bg: #050816;
+  --color-dark-card: rgba(255, 255, 255, 0.02);
+  --color-dark-border: rgba(255, 255, 255, 0.06);
 
-  --color-primary: #8b5cf6;
-  --color-primary-glow: #c084fc;
+  --color-primary: #00F5FF;
+  --color-primary-glow: rgba(0, 245, 255, 0.15);
 
-  --color-secondary: #06b6d4;
-  --color-secondary-glow: #22d3ee;
+  --color-secondary: #7B61FF;
+  --color-secondary-glow: rgba(123, 97, 255, 0.15);
+
+  --color-accent: #00FF88;
+  --color-accent-glow: rgba(0, 255, 136, 0.15);
 
   --animate-blob: blob 10s infinite alternate;
 
@@ -33,9 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Smooth Scrolling */
-html {
+html, body {
   scroll-behavior: smooth;
-  background-color: #030014;
+  background-color: #050816;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
 /* Custom Scrollbar */
@@ -44,16 +50,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #030014;
+  background: #050816;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(0, 245, 255, 0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.6);
+  background: rgba(0, 245, 255, 0.6);
 }
 
 /* Glassmorphism Styles */
@@ -99,13 +105,19 @@ html {
 
 /* Custom Text Gradients */
 .text-gradient-purple-cyan {
-  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #7B61FF 0%, #00F5FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-cyan-purple {
-  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #00F5FF 0%, #7B61FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-neon {
+  background: linear-gradient(135deg, #00F5FF 0%, #7B61FF 50%, #00FF88 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

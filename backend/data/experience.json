@@ -1,15 +1,15 @@
 [
   {
-    "role": "Power Platform Intern",
+    "role": "React Developer & Power Platform Developer",
     "company": "devNectar Consultancy",
     "location": "Pune, India",
-    "period": "Feb 2026- Present",
+    "period": "February 2026 – Present",
     "highlights": [
-      "Develop and deploy enterprise-level PowerApps and Power Automate flows to automate manual workflows.",
-      "Integrate SharePoint lists and databases for efficient information storage and management.",
-      "Build custom modern web dashboards using React and Tailwind CSS, integrating with Node.js and Django backends.",
-      "Incorporate AI-based solutions, including document question-answering pipelines using local Ollama and RAG models.",
-      "Create interactive reports and business intelligence dashboards using Power BI to visualize key performance indicators."
+      "Architected and developed responsive user interfaces using React, improving application performance by 35% and enhancing user experience across multiple platforms.",
+      "Designed and deployed backend services using Node.js and Python (Django), building scalable REST APIs capable of handling 1000+ concurrent users.",
+      "Developed enterprise-grade solutions leveraging Microsoft Power Platform including PowerApps (Canvas & Model-driven apps), Power BI dashboards, Power Automate workflows, and seamless SharePoint integration.",
+      "Built innovative AI-powered solutions using Ollama, RAG framework, and Agentic AI, demonstrating expertise in modern generative AI and intelligent automation systems.",
+      "Implemented Azure-based AI solutions utilizing Azure AI Document Intelligence (Document Intelligence Studio) to develop custom document extraction models, including end-to-end training, testing, and deployment. Integrated these models into automation workflows and applications (Power Automate, PowerApps) for intelligent data extraction and process automation."
     ],
     "id": 1
   }

@@ -1,23 +1,23 @@
 [
   {
-    "name": "Best Application Developer Certificate",
-    "issuer": "Computer Society of India (CSI)",
-    "date": "2023",
-    "description": "Certified as Best Application Developer during the CSI annual convention/competition.",
+    "name": "AI Engineer ",
+    "issuer": "Oneroadmap",
+    "date": "2025",
+    "description": "Successfully completed the AI Engineer Certification from Roadmap.sh, gaining knowledge of AI concepts, machine learning fundamentals, and modern AI tools. Developed practical skills in building and integrating AI-powered applications and solutions.",
     "id": 1
   },
   {
-    "name": "Microsoft Power Platform Certified App Maker",
-    "issuer": "Microsoft",
-    "date": "2024",
-    "description": "Validation of skills in creating custom canvas and model-driven business applications with Microsoft PowerApps, Power Automate, and SharePoint integrations.",
+    "name": "Python Basics ",
+    "issuer": "Oneroaddmap",
+    "date": "2025",
+    "description": "Completed Python Basics certification from OneRoadmap, covering core programming concepts such as variables, data types, loops, functions, and object-oriented programming. Gained hands-on experience in writing efficient and structured Python code.",
     "id": 2
   },
   {
-    "name": "Python & Data Science Professional",
-    "issuer": "Udemy / Online Professional Certification",
-    "date": "2023",
-    "description": "Comprehensive course covering advanced Python programming, data structures, and machine learning foundations.",
+    "name": "Generative AI for Beginners ",
+    "issuer": "Simplilearn",
+    "date": "2025",
+    "description": "Completed a certification in Generative AI, covering the fundamentals of AI models, prompt engineering, and real-world applications. Gained practical knowledge of how generative AI is used to create intelligent and innovative solutions.",
     "id": 3
   }
 ]

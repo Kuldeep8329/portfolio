@@ -1,43 +1,85 @@
 [
   {
-    "title": "Local RAG Document Assistant",
-    "description": "An AI-powered document search and question-answering assistant. Built using React for the frontend and a Node.js backend integration with Ollama. Implements Retrieval-Augmented Generation (RAG) to query local text documents privately and securely without external API dependency.",
+    "title": "Agri Store System",
+    "description": "Developed a web-based agriculture store that allows farmers and customers to browse and purchase agricultural products such as seeds, fertilizers, and pesticides. Built using modern web technologies with product management, user-friendly navigation, and responsive design for a seamless shopping experience.",
     "tech": [
-      "React",
-      "Node.js",
-      "Ollama",
-      "RAG",
-      "Tailwind CSS"
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "JS",
+      "Bootstrap"
     ],
     "link": "#",
     "github": "#",
     "id": 1
   },
   {
-    "title": "Enterprise Workflow Automation System",
-    "description": "Designed and deployed a suite of Power Platform applications, including custom canvas PowerApps and automated flows via Power Automate. Built automated email notifications and approvals mapped to a SharePoint database and visual analytics via Power BI dashboards.",
+    "title": "Homved ",
+    "description": "Developed a web-based e-commerce platform for Ayurvedic and natural healthcare products. The website provides an easy product browsing and purchasing experience with a user-friendly interface, secure ordering process, and responsive design. It helps customers explore and buy quality Ayurvedic products conveniently from any device.",
     "tech": [
-      "PowerApps",
-      "Power Automate",
-      "Power BI",
-      "SharePoint"
+      "React",
+      "Nodejs",
+      "Database(Supabase)",
+      "Deployment (Versal)"
     ],
-    "link": "#",
+    "link": "demo.devnectar.in",
     "github": "#",
     "id": 2
   },
   {
-    "title": "Interactive Client Portal",
-    "description": "A full-stack, responsive web application for client management and analytics. Features a premium glassmorphism dashboard in React on the frontend and an Express/Node.js API for backend data routing and authentication.",
+    "title": "HR Management System",
+    "description": " Built a centralized HR management solution using Power Apps, SharePoint, Dataverse and Power Automate to streamline employee data management and approval workflows through automation. ",
     "tech": [
-      "React",
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "Framer Motion"
+      "Powe Apps",
+      "Sharepoint",
+      "Dataverse",
+      "Power automate"
     ],
     "link": "#",
     "github": "#",
     "id": 3
+  },
+  {
+    "id": 1780688110833,
+    "title": "AI-Integrated Task Assitant",
+    "description": "Developed an AI-powered task management assistant that helps users organize, prioritize, and track daily tasks efficiently. The system uses AI to provide smart suggestions, automate routine actions, and improve productivity. Built with a user-friendly interface and responsive design to deliver a seamless user experience across devices.",
+    "tech": [
+      "python",
+      "django",
+      "HTML",
+      "CSS",
+      "JS",
+      "Bootstarp"
+    ],
+    "link": "#",
+    "github": "#"
+  },
+  {
+    "id": 1780726834464,
+    "title": "IMRD College Chatbot",
+    "description": "Developed an AI-powered chatbot for IMRD College to assist students with academic and administrative queries. The chatbot provides instant information about courses, admissions, timetables, events, and college services. Designed with a user-friendly interface to ensure quick and efficient communication for students and visitors.",
+    "tech": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "JS",
+      "Bootstrap"
+    ]
+  },
+  {
+    "id": 1780726973007,
+    "title": "Dev-AI Chatbot",
+    "description": "Developed an AI-powered chatbot designed to provide intelligent and real-time assistance to users. The chatbot can answer questions, generate content, and support various tasks through natural language conversations. Built with a responsive and user-friendly interface to deliver an efficient and engaging user experience.",
+    "tech": [
+      "React",
+      "python",
+      "django",
+      "LLM",
+      "RAG",
+      "Croma-DB",
+      ""
+    ]
   }
 ]

@@ -8,9 +8,7 @@ const TiltCard = ({ children, className = '', glowColor = 'primary' }) => {
     <div
       className={`glass-card p-6 rounded-2xl transition-all duration-300 ease-out border ${glowStyleClass} ${className}`}
     >
-      <div className="h-full">
-        {children}
-      </div>
+      {children}
     </div>
   );
 };

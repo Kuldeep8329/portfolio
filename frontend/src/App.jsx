@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import LiquidBackground from './components/LiquidBackground';
+import ThreeBackground from './components/ThreeBackground';
 import Hero from './components/Sections/Hero';
-import About from './components/Sections/About';
-import Skills from './components/Sections/Skills';
+import AvatarSection from './components/Sections/AvatarSection';
+
 import Experience from './components/Sections/Experience';
 import Projects from './components/Sections/Projects';
 import Education from './components/Sections/Education';
@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 
 import AdminLogin from './components/Admin/AdminLogin';
 import AdminDashboard from './components/Admin/AdminDashboard';
+import { API_BASE_URL } from './config';
 
 const PortfolioPage = ({ loading, portfolioData }) => {
   if (loading) {
@@ -36,9 +37,9 @@ const PortfolioPage = ({ loading, portfolioData }) => {
   }
 
   return (
-    <div className="relative min-h-screen text-white bg-[#030014] selection:bg-primary/30 selection:text-white">
+    <div className="relative min-h-screen text-white bg-[#050816] selection:bg-primary/30 selection:text-white">
       {/* Background visual components */}
-      <LiquidBackground />
+      <ThreeBackground />
 
       {/* Global Navigation */}
       <Navbar />
@@ -49,12 +50,10 @@ const PortfolioPage = ({ loading, portfolioData }) => {
         
         {/* Decorative Divider */}
         <div className="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
-        
-        <About profile={portfolioData.profile} />
-        
-        <div className="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
-        
-        <Skills skills={portfolioData.skills} />
+
+        <AvatarSection />
+
+
         
         <div className="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         
@@ -115,7 +114,7 @@ const App = () => {
         // Fetch all APIs in parallel
         const responses = await Promise.all(
           endpoints.map(ep => 
-            fetch(`http://localhost:5000/api/${ep}`)
+            fetch(`${API_BASE_URL}/api/${ep}`)
               .then(res => res.json())
               .catch(err => {
                 console.warn(`Error fetching endpoint ${ep}, using fallbacks:`, err);
