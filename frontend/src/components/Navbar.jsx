@@ -3,7 +3,6 @@ import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
@@ -75,7 +74,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
+    <>
+      <nav className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
       isScrolled 
         ? 'py-4 bg-[#030014]/75 backdrop-blur-md border-b border-white/5 shadow-lg' 
         : 'py-6 bg-transparent border-b border-transparent'
@@ -87,9 +87,9 @@ const Navbar = () => {
           onClick={(e) => handleNavClick(e, 'home')}
           className="flex items-center gap-2.5 text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-all"
         >
-          <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain rounded-lg" />
+          <img src="/logo.png" alt="Logo" className="w-6 h-6 object-contain rounded-lg" />
           <span>
-            KULDEEP<span className="text-primary font-extrabold font-mono">.</span>
+            KULDEEP
           </span>
         </a>
 
@@ -111,16 +111,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden lg:block">
-          <a
-            href="#contact"
-            onClick={(e) => handleNavClick(e, 'contact')}
-            className="px-5 py-2 text-sm font-semibold rounded-full border border-primary/40 hover:border-primary/80 bg-primary/10 hover:bg-primary/20 text-white transition-all shadow-[0_0_15px_rgba(139,92,246,0.1)] hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
-          >
-            Hire Me
-          </a>
-        </div>
+
 
         {/* Mobile Menu Button */}
         <button
@@ -130,6 +121,15 @@ const Navbar = () => {
           {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
+      </nav>
+
+      {/* Mobile Drawer Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-[#050816]/60 backdrop-blur-sm z-40 lg:hidden transition-opacity"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
 
       {/* Mobile Drawer */}
       <div className={`fixed inset-y-0 right-0 w-72 bg-[#030014]/95 border-l border-white/10 backdrop-blur-xl z-50 transform transition-transform duration-300 lg:hidden ${
@@ -160,16 +160,10 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={(e) => handleNavClick(e, 'contact')}
-            className="mt-4 px-4 py-3 text-center text-sm font-semibold rounded-xl bg-gradient-to-r from-primary to-secondary text-white transition-all"
-          >
-            Hire Me
-          </a>
+
         </div>
       </div>
-    </nav>
+    </>
   );
 };
 

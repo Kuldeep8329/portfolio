@@ -255,7 +255,7 @@ router.get('/portfolio-data', authenticateToken, async (req, res) => {
 
 // 1. Profile Update
 router.put('/profile', authenticateToken, async (req, res) => {
-  const { name, role, location, email, phone, summary, languages } = req.body;
+  const { name, role, location, email, phone, summary, languages, resumeLink } = req.body;
 
   try {
     // Check if profile exists in DB
@@ -265,9 +265,9 @@ router.put('/profile', authenticateToken, async (req, res) => {
     if (check.rows.length === 0) {
       // Create profile
       const result = await db.query(
-        `INSERT INTO profile (name, role, location, email, phone, summary, languages)
-         VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *`,
-        [name, role, location, email, phone, summary, languages]
+        `INSERT INTO profile (name, role, location, email, phone, summary, languages, resume_link)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *`,
+        [name, role, location, email, phone, summary, languages, resumeLink]
       );
       finalProfile = result.rows[0];
     } else {
@@ -275,9 +275,9 @@ router.put('/profile', authenticateToken, async (req, res) => {
       const id = check.rows[0].id;
       const result = await db.query(
         `UPDATE profile 
-         SET name = $1, role = $2, location = $3, email = $4, phone = $5, summary = $6, languages = $7
-         WHERE id = $8 RETURNING *`,
-        [name, role, location, email, phone, summary, languages, id]
+         SET name = $1, role = $2, location = $3, email = $4, phone = $5, summary = $6, languages = $7, resume_link = $8
+         WHERE id = $9 RETURNING *`,
+        [name, role, location, email, phone, summary, languages, resumeLink, id]
       );
       finalProfile = result.rows[0];
     }
@@ -289,7 +289,7 @@ router.put('/profile', authenticateToken, async (req, res) => {
     console.warn('Profile DB update failed, falling back to local JSON. Error:', error.message);
     
     // Offline local JSON update
-    const profileData = { name, role, location, email, phone, summary, languages };
+    const profileData = { name, role, location, email, phone, summary, languages, resumeLink };
     await writeDataFile('profile.json', profileData);
     res.json({ success: true, message: 'Profile updated successfully (local backup saved).', data: profileData });
   }

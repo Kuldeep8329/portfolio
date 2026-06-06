@@ -4,6 +4,7 @@ import {
   User, Briefcase, Award, GraduationCap, Award as CertificateIcon, 
   Settings, Mail, LogOut, Loader2, Plus, Trash2, Edit2, Check, X, ShieldAlert 
 } from 'lucide-react';
+import { API_BASE_URL } from '../../config';
 
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('profile');
@@ -48,7 +49,7 @@ const AdminDashboard = () => {
     const loadData = async () => {
       try {
         // Verify token
-        const verifyRes = await fetch('http://localhost:5000/api/admin/verify', {
+        const verifyRes = await fetch(`${API_BASE_URL}/api/admin/verify`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         
@@ -59,7 +60,7 @@ const AdminDashboard = () => {
         }
 
         // Fetch portfolio data
-        const dataRes = await fetch('http://localhost:5000/api/admin/portfolio-data', {
+        const dataRes = await fetch(`${API_BASE_URL}/api/admin/portfolio-data`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         const dataJson = await dataRes.json();
@@ -68,7 +69,7 @@ const AdminDashboard = () => {
         }
 
         // Fetch leads
-        const leadsRes = await fetch('http://localhost:5000/api/admin/leads', {
+        const leadsRes = await fetch(`${API_BASE_URL}/api/admin/leads`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         const leadsJson = await leadsRes.json();
@@ -109,7 +110,7 @@ const AdminDashboard = () => {
           : data.profile.languages
       };
 
-      const res = await fetch('http://localhost:5000/api/admin/profile', {
+      const res = await fetch(`${API_BASE_URL}/api/admin/profile`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -141,7 +142,7 @@ const AdminDashboard = () => {
     }
     setSubmitting(true);
     try {
-      const res = await fetch('http://localhost:5000/api/admin/change-password', {
+      const res = await fetch(`${API_BASE_URL}/api/admin/change-password`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -168,7 +169,7 @@ const AdminDashboard = () => {
   const handleDeleteItem = async (type, id) => {
     if (!window.confirm('Are you sure you want to delete this item?')) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/${type}/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/${type}/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -203,7 +204,7 @@ const AdminDashboard = () => {
         payload.highlights = payload.highlights.split('\n').filter(s => s.trim() !== '');
       }
 
-      const res = await fetch(`http://localhost:5000/api/admin/${type}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/${type}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -246,7 +247,7 @@ const AdminDashboard = () => {
         payload.highlights = payload.highlights.split('\n').filter(s => s.trim() !== '');
       }
 
-      const res = await fetch(`http://localhost:5000/api/admin/${type}/${payload.id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/${type}/${payload.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -352,7 +353,7 @@ const AdminDashboard = () => {
         
         {/* Floating status alert popup */}
         {message.text && (
-          <div className={`fixed top-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3 rounded-xl border text-sm shadow-2xl animate-slideIn ${
+          <div className={`fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3 rounded-xl border text-sm shadow-2xl animate-slideIn ${
             message.type === 'success' 
               ? 'bg-green-500/15 border-green-500/30 text-green-400' 
               : 'bg-red-500/15 border-red-500/30 text-red-400'
@@ -448,6 +449,18 @@ const AdminDashboard = () => {
                 />
               </div>
             </div>
+            
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold text-gray-400 uppercase block">Resume Link</label>
+              <input
+                type="url"
+                value={data.profile.resumeLink || ''}
+                onChange={e => setData({ ...data, profile: { ...data.profile, resumeLink: e.target.value } })}
+                placeholder="https://drive.google.com/..."
+                className="w-full bg-white/5 border border-white/10 px-4 py-2.5 rounded-xl text-sm text-white focus:outline-none focus:border-primary/50"
+              />
+            </div>
+
             <div className="space-y-1.5">
               <label className="text-xs font-semibold text-gray-400 uppercase block">Professional Summary</label>
               <textarea

@@ -1,4 +1,4 @@
-import { ChevronUp } from 'lucide-react';
+import { ChevronUp, Mail } from 'lucide-react';
 
 const GithubIcon = ({ size = 16, className = '' }) => (
   <svg 
@@ -43,7 +43,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative border-t border-white/5 bg-[#030014]/80 py-12 px-6 z-10 overflow-hidden">
+    <footer className="relative border-t border-white/5 bg-[#030014]/80 py-8 px-6 z-10 overflow-hidden">
       {/* Decorative top blur line */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
@@ -57,7 +57,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-xs text-gray-500 max-w-xs font-light">
-            Power Platform Intern & Full-Stack Developer. Automating enterprise workflows and engineering high-end UI dashboards.
+            Power Platform Intern & AI Engineer. Automating enterprise workflows and engineering high-end UI dashboards.
           </p>
         </div>
 
@@ -81,6 +81,7 @@ const Footer = () => {
             >
               <LinkedinIcon size={16} />
             </a>
+
           </div>
 
           <p className="text-[11px] text-gray-600">

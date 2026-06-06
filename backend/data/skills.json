@@ -15,7 +15,6 @@
     "items": [
       "React",
       "Node.js",
-      "Express.js",
       "Django",
       "Bootstrap",
       "Tailwind CSS"
@@ -29,6 +28,7 @@
       "Power BI",
       "Power Automate",
       "SharePoint",
+      "Microsoft Azure",
       "MS-365 Tools"
     ],
     "id": 3
@@ -46,10 +46,11 @@
   {
     "category": "AI & Advanced Tech",
     "items": [
-      "Generative AI",
-      "Ollama",
+      "Large Language Model(LLM)",
       "Retrieval-Augmented Generation (RAG)",
-      "Machine Learning (ML)"
+      "Machine Learning (ML)",
+      "Agentic AI",
+      "AI Agents"
     ],
     "id": 5
   }

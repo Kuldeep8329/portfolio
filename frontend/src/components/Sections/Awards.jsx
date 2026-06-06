@@ -8,7 +8,7 @@ const Awards = ({ awards }) => {
       title: "Best Application Developer",
       organization: "Computer Society of India (CSI)",
       date: "2023",
-      description: "Recognized for designing and building an outstanding, high-performance web application, displaying advanced capabilities in full-stack architecture and frontend styling."
+      description: "Recognized for designing and building an outstanding, high-performance web application, displaying advanced capabilities in AI product architecture and frontend styling."
     },
     {
       title: "1st Prize - State-Level Project Competition",
@@ -44,7 +44,7 @@ const Awards = ({ awards }) => {
   };
 
   return (
-    <section id="awards" className="py-12 px-6 relative z-10">
+    <section id="awards" className="py-[30px] px-6 relative z-10 overflow-hidden bg-transparent">
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="text-center mb-16">
@@ -110,10 +110,6 @@ const Awards = ({ awards }) => {
                   </p>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-[10px] text-gray-500 uppercase tracking-widest font-semibold">
-                  <span>Recognition</span>
-                  <span className="text-primary font-bold">1st Place / Honor</span>
-                </div>
               </TiltCard>
             </motion.div>
           ))}

@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title": "third Rank in project development",
-    "organization": "Computer Society of India (CSI)",
-    "date": "2025",
-    "description": "Recognized for designing and building an outstanding, high-performance web application, displaying advanced capabilities in full-stack architecture and frontend styling."
+    "title": "1st Prize –ASC College Poster Presentation Competition ",
+    "organization": "ASC College Chopda",
+    "date": "2024",
+    "description": " Awarded 1st place for presenting a poster on Consumer Awareness and consumer rights education. "
   },
   {
     "id": 2,
-    "title": "1st Prize - State-Level Project Competition",
-    "organization": "Inter-Collegiate TechFest",
-    "date": "2023",
-    "description": "Won first prize for presenting an AI-based automated solution utilizing local Large Language Models (LLM) and RAG for automated workspace assistance."
+    "title": " 2nd Prize – CSI Project Competition",
+    "organization": "CSI",
+    "date": "2025",
+    "description": " Secured 2nd place for developing the Agri Store System, agriculture-focused e-commerce platform.  "
   },
   {
     "id": 3,
-    "title": "Special Recognition for Digital Innovation",
-    "organization": "Academic Department Excellence Award",
-    "date": "2022",
-    "description": "Awarded for designing a custom student portal application that improved department communication and automated lab scheduling."
+    "title": "3rd Prize – CSI Project Competition",
+    "organization": "CSI",
+    "date": "2025",
+    "description": " Secured 3rd place for the AI-Integrated Task Assistant, for managing human daily tasks"
   }
 ]
